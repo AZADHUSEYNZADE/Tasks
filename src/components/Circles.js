@@ -51,7 +51,7 @@ const Circles = () => {
       </form>
       <p className="errorMessage"> {errors.integer?.message} </p>
       <div className="mainBox">
-        {Boolean(length) &&
+        {!!length &&
           Array.from({ length })?.map((_, i) => {
             const angle = 360 / length;
             console.log(angle, "angle");

@@ -54,10 +54,10 @@ const Circles = () => {
         {!!length &&
           Array.from({ length })?.map((_, i) => {
             const angle = 360 / length;
-            console.log(angle, "angle");
             const lastRotate = angle * i + angle;
-            console.log(lastRotate, "lastRotate ");
             const circleSize = 10;
+            console.log(angle, "angle");
+            console.log(lastRotate, "lastRotate");
             return (
               <div
                 key={i}
